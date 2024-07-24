@@ -13,7 +13,7 @@
 - **Use cases**: Stack-based Scenarios where the most recent entries are less likely to be needed soon.
 
 4. What LRU means
-- Least Recently Used(LRU) is the most popular and widely used cache replacement policies. The LRU policy assumes that items which have not been used recently are less likely to be used in the near future. When the cache reaches its capacity and new item needs to be added, the item that has been accessed the least recently is evicted.
+- Least Recently Used(LRU) is the most popular and widely used cache replacement policies. The LRU policy assumes that items which have not been used recently are less likely to be used in the near future. These items are tracked with `time stamp` or order of access. When the cache reaches its capacity and new item needs to be added, the item that has been accessed the least recently is evicted.
 - **Disadvantages**: Implementing LRU can be more complex and computationally expensive compared to FIFO or LIFO because it requires tracking the order of access for all items.
 - It requires additional data structures like linked lists to maintain the order of access, which can increase memory overhead.
 - **Use cases**: Web caching, Database caching, Operating Systems.
@@ -22,7 +22,7 @@
 - Most Recently Used(MRU) is the opposite of the LRU policy. It is a cache replacement policy that operates on the principle that most recently accessed or added items are the first to be removed when the cache reaches its capacity. It assumes the most recently used items are less likely to needed again soon.
 
 6. What LFU means
-- Least Frequently Used(LFU) is a cache replacement policy that evicts least accessed ite,s first when the cache reaches its capacity. If multiple items have have the same count, a secondary policy(such as FIFO) may be used to decide which item to evict.
+- Least Frequently Used(LFU) is a cache replacement policy that evicts item with the `lowest access count` first when the cache reaches its capacity. If multiple items have have the same count, a secondary policy(such as FIFO) may be used to decide which item to evict.
 - **Disadvantages**: Implementing LFU can be more complex and computationally expensive compared to FIFO or LIFO because it requires tra    cking and updating the access count for each items.
 - Requires additional data structures to maintain the access counts, which can increase memory overhead.
 - **Use cases**: Web caching, Database caching, Operating Systems.
