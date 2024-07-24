@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Inherits from base_caching.py module
 """
 from base_caching import BaseCaching
