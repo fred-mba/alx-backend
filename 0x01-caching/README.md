@@ -40,3 +40,10 @@
 - **Eviction Policy Efficiency**: The effectiveness of a caching system heavily depends on the chosen eviction policy. An inappropriate policy may lead to inefficient caching and frequent cache misses.
 - **Security Risks**: Caching sensitive data can introduce security vulnerabilities if not managed properly, as unauthorized access to the cache can lead to data breaches.
 - **Complexity in Implementation**: Implementing and managing an efficient caching system can add complexity to the overall system architecture.
+
+### Resources
+- [Cache replacement policies - FIFO](https://en.wikipedia.org/wiki/Cache_replacement_policies#First_In_First_Out_%28FIFO%29)
+- [Cache replacement policies - LIFO](https://en.wikipedia.org/wiki/Cache_replacement_policies#Last_In_First_Out_%28LIFO%29)
+- [Cache replacement policies - LRU](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_%28LRU%29)
+- [Cache replacement policies - MRU](https://en.wikipedia.org/wiki/Cache_replacement_policies#Most_Recently_Used_%28MRU%29)
+- [Cache replacement policies - LFU](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least-Frequently_Used_%28LFU%29)
