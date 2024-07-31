@@ -5,6 +5,7 @@ A basic Babel setup module
 from flask import Flask render_template
 from flask_babel import Babel
 
+
 class Config:
     """
     Configure available languages["en", "fr"]
@@ -15,7 +16,7 @@ class Config:
 
 
 app = Flask(__name__)
-app.config.from.object(Config)
+app.config.from_object(Config)
 app.url.strict_slashes = False
 babel = Babel(app)
 
