@@ -2,7 +2,7 @@
 """
 A basic Babel setup module
 """
-from flask import Flask render_template
+from flask import Flask, render_template
 from flask_babel import Babel
 
 
