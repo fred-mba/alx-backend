@@ -14,6 +14,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 babel = Babel(app)
 
+
 @app.route('/')
 def index() -> str:
     """
@@ -21,7 +22,9 @@ def index() -> str:
     """
     return render_template('2-index.html')
 
-def get_locale():
+
+@babel.localeselector
+def get_locale() -> str:
     """
     The fuction looks at user request and pick the best language translation
     to use for that request
