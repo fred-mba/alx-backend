@@ -56,7 +56,7 @@ jobs.forEach((jobData) => {
     });
   job
     .on('complete', () => {
-      console.log('Notification job completed');
+      console.log(`Notification job ${job.id} completed`);
     })
     .on('progress', (progress) => {
       console.log(`Notification job ${job.id} ${progress}% complete`);
